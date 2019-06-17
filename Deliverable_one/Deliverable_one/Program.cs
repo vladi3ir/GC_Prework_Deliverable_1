@@ -21,14 +21,18 @@ namespace Deliverable_one
             String val3;
             val3 = Console.ReadLine();
 
-            Int32 a = Convert.ToInt32(val1);
-            Int32 b = Convert.ToInt32(val2);
-            Int32 c = Convert.ToInt32(val3);
+            double a;
+            double b;
+            double c;
 
-            Int32 sum = a + b + c;
-            Int32 average = sum / 3;
+            a = Convert.ToDouble(val1);
+            b = Convert.ToDouble(val2);
+            c = Convert.ToDouble(val3);
 
-            int[] arr = new int[] { a, b, c };
+            double  sum = a + b + c;
+            double average = sum / 3;
+
+            double[] arr = new double[] { a, b, c };
             Array.Sort(arr);
 
             Console.WriteLine("The average is {0}", average);
@@ -39,7 +43,7 @@ namespace Deliverable_one
             Console.WriteLine("Swedish: {0}", (sum * 9.48).ToString("C", new CultureInfo("sv-SE")));
             Console.WriteLine("Japanese:{0}", (sum * 108.67).ToString("C", new CultureInfo("ja-JP")));
             Console.WriteLine("Thai:{0}", (sum * 31.24).ToString("C", new CultureInfo("th-TH")));
-        
+
 
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
